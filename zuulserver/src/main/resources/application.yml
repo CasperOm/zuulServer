@@ -12,4 +12,4 @@ zuul:
         - user=anonymous
         - origin
         - httpmethod=options
-        brea-on-match: true
+        break-on-match: true

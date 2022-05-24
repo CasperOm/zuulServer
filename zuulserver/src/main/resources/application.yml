@@ -1,0 +1,15 @@
+zuul:
+  routes:
+    testService:
+      path: /AdminService/**
+      service-id: admin-service
+  ratelimit:
+    policy-list:
+      testService:
+      - limit: 1000
+        refresh-interval: 60
+        type:
+        - user=anonymous
+        - origin
+        - httpmethod=options
+        brea-on-match: true

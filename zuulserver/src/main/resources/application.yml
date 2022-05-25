@@ -4,6 +4,7 @@ zuul:
       path: /AdminService/**
       service-id: admin-service
   ratelimit:
+    enabled: true
     policy-list:
       testService:
       - limit: 1000
